@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="/index.html">Inicio</a></li>
+            <li class="nav__li"><a href="/form.html">Formulario</a></li>
+        </ul>
+    </div>
+
+    <!-- ## Documento 2 (formulario.html)
+
+    - Título "Contacto"
+    - Agregar formulario, especificar método (get) y destino (mismo archivo):
+    - Nombre // texto
+    - Correo // mail
+    - Genero // radio
+    - Contraseña // password
+    - Comentario // text area
+    - Ciudad: Guadalajara, Zapopan, Tonalá, Otra // select
+    - Me interesa contratarte // check
+    - Botón para enviar // button o input
+
+    - Todos los campos deben tener su label respectivo y atributo name -->
+
+    <h1 id="title">Contacto</h1>
+    <form action="/form.html" method="get" class="form">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo">
+        <label for="genero">Genero</label>
+        <input type="radio" name="genero" id="genero" value="hombre">Hombre
+        <input type="radio" name="genero" id="genero" value="mujer">Mujer
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña">
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        <label for="ciudad">Ciudad</label>
+        <select name="ciudad" id="ciudad">
+            <option value="guadalajara">Guadalajara</option>
+            <option value="zapopan">Zapopan</option>
+            <option value="tonala">Tonalá</option>
+            <option value="otra">Otra</option>
+        </select>
+        <label for="interes">Me interesa contratarte</label>
+        <input type="checkbox" name="interes" id="interes">
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
